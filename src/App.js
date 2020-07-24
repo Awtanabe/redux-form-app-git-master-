@@ -7,7 +7,7 @@ class App extends React.Component {
   submit = values => {
     // print the form values to the console
     console.log(values)
-  }
+  } 
   render() {
     return (
       <div className="App">

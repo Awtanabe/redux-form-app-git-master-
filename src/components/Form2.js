@@ -15,8 +15,12 @@ import {Field,reduxForm} from 'redux-form'
 //   }
 // }
 
+function submit(values){
+  // print the form values to the console
+  return console.log(values)
+}
 
-let ContactForm = props => {
+let Contact2Form = props => {
   const {handleSubmit} = props
 
   return(
@@ -38,9 +42,9 @@ let ContactForm = props => {
   )
 }
 
-ContactForm = reduxForm({
-   form: 'contact'
-})(ContactForm)
+Contact2Form = reduxForm({
+   form: 'sample'
+})(Contact2Form)
 
 
-export default ContactForm
+export default Contact2Form
